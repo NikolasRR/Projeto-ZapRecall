@@ -1,12 +1,10 @@
-import Main from "./Components/Main";
 import reactDom from "react-dom";
-import Footer from "./Components/Footer";
+import Junction from "./Components/Junction";
 
 function App () {
     return (
         <>
-            <Main />
-            {/* <Footer /> */}
+            <Junction />
         </>
     )
 }

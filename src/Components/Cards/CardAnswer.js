@@ -1,15 +1,21 @@
-function CardAnswer ({answer, setPerformance, setAnswered, finishedQuestions}) {
+import react from "react";
+
+
+function CardAnswer ({answer, setPerformance, setAnswered, setAnsweredQuestions}) {
     const redOnClick = () => {
         setPerformance({color: "red", icon: "close-circle"}); 
         setAnswered(true);
+        setAnsweredQuestions([...{color: "red", icon: "close-circle"}]);
     };
     const yellowOnClick = () => {
         setPerformance({color: "yellow", icon: "help-circle"}); 
         setAnswered(true);
+        setAnsweredQuestions([...{color: "yellow", icon: "help-circle"}]);
     };
     const greenOnClick = () => {
         setPerformance({color: "green", icon: "checkmark-circle"}); 
         setAnswered(true);
+        setAnsweredQuestions([...{color: "green", icon: "checkmark-circle"}]);
     };
     return (
         <article className="questionsOpened">
@@ -23,4 +29,6 @@ function CardAnswer ({answer, setPerformance, setAnswered, finishedQuestions}) {
     )
 }
 
-export default CardAnswer;
+
+
+export {CardAnswer};

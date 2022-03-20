@@ -1,15 +1,16 @@
-// function Footer () {
-    
-//     return (
-//         <footer>
-//             <p>{finishedQuestions.length}/8 CONCLUÍDOS</p>
-//             <div class="ionicons">
-//                 {finishedQuestions.map(
-//                     question => <ion-icon name={finishedQuestions.icon} class={finishedQuestions.color}></ion-icon>
-//                 )}
-//             </div>
-//         </footer>
-//     )
-// }
+import react from "react";
 
-// export default Footer;
+function Footer ({answeredQuestions}) {
+    return (
+        <footer>
+            <p>{answeredQuestions.length}/8 CONCLUÍDOS</p>
+            <div className="ionicons">
+                {answeredQuestions.map(
+                    question => <ion-icon name={answeredQuestions.icon} class={answeredQuestions.color}></ion-icon>
+                )}
+            </div>
+        </footer>
+    )
+}
+
+export {Footer};

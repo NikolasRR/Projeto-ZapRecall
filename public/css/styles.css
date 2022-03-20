@@ -7,13 +7,13 @@ body {
     justify-content: center;
 }
 
-header {
+.header1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header h1 {
+.header1 h1 {
     font-size: 25px;
     line-height: 31px;
     letter-spacing: -0.012em;
@@ -44,7 +44,7 @@ button {
     align-items: center;
 }
 
-.root header {
+.header2 {
     position: fixed;
     top: 19px;
     left: calc(50vw - 64px);
@@ -52,15 +52,16 @@ button {
     flex-direction: row;
 }
 
-.root header h1 {
+.header2 h1 {
     width: 101.59px;
     height: 22px;
+    color: #FFFFFF;
     font-family: 'Righteous', cursive;
     font-size: 20px;
     line-height: 25px;
 }
 
-.root header img {
+.header2 img {
     width: 26px; 
 }
 
