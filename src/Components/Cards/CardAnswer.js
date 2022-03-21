@@ -1,21 +1,18 @@
-import react from "react";
-
-
-function CardAnswer ({answer, setPerformance, setAnswered, setAnsweredQuestions}) {
+function CardAnswer ({answer, setPerformance, setAnswered, setAnsweredQuestions, answeredQuestions}) {
     const redOnClick = () => {
         setPerformance({color: "red", icon: "close-circle"}); 
         setAnswered(true);
-        setAnsweredQuestions([...{color: "red", icon: "close-circle"}]);
+        setAnsweredQuestions([...answeredQuestions, {color: "red", icon: "close-circle", key: "red"}]);
     };
     const yellowOnClick = () => {
         setPerformance({color: "yellow", icon: "help-circle"}); 
         setAnswered(true);
-        setAnsweredQuestions([...{color: "yellow", icon: "help-circle"}]);
+        setAnsweredQuestions([...answeredQuestions, {color: "yellow", icon: "help-circle", key: "yellow"}]);
     };
     const greenOnClick = () => {
         setPerformance({color: "green", icon: "checkmark-circle"}); 
         setAnswered(true);
-        setAnsweredQuestions([...{color: "green", icon: "checkmark-circle"}]);
+        setAnsweredQuestions([...answeredQuestions, {color: "green", icon: "checkmark-circle", key: "green"}])
     };
     return (
         <article className="questionsOpened">

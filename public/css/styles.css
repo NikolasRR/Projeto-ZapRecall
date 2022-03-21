@@ -172,7 +172,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    min-height: 50px;
+    height: 50px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -187,12 +187,34 @@ footer p {
     line-height: 14px;
     font-family: 'Recursive', sans-serif;
     color: #333333;
-    width: 97px;
+    min-width: 97px;
     height: 14px;
 }
 
-footer ion-icon {
+.footer1 ion-icon {
     font-size: 20px;
+}
+
+footer.footerFinal {
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.15);
+}
+
+footer.footerFinal h6 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Recursive', sans-serif;
+    color: #333333;
+    padding-left: 4px;
+}
+
+footer.footerFinal div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3px;
 }
 
 .red {
@@ -210,3 +232,4 @@ footer ion-icon {
 .hidden {
     display: none;
 }
+

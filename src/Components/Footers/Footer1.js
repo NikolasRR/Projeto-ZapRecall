@@ -1,16 +1,16 @@
-import react from "react";
-
-function Footer ({answeredQuestions}) {
+function Footer1 ({answeredQuestions}) {
     return (
-        <footer>
+        <footer className="footer1">
             <p>{answeredQuestions.length}/8 CONCLUÍDOS</p>
             <div className="ionicons">
                 {answeredQuestions.map(
-                    question => <ion-icon name={answeredQuestions.icon} class={answeredQuestions.color}></ion-icon>
+                    question => <ion-icon name={question.icon} class={question.color}></ion-icon>
                 )}
             </div>
         </footer>
     )
 }
 
-export {Footer};
+export default Footer1;
+
+

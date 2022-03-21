@@ -6,7 +6,7 @@ import CardQuestion from "./CardQuestion";
 
 function Card (props) {
     const {question, answer} = props.item;
-    const {index, setAnsweredQuestions} = props;
+    const {index, setAnsweredQuestions, answeredQuestions} = props;
 
     const [closed, setClosed] = react.useState(true);
     const [turned, setTurned] = react.useState(false);
@@ -24,7 +24,7 @@ function Card (props) {
         }
         {
             !closed && turned && !answered &&
-            <CardAnswer answer={answer} setAnswered={setAnswered} setPerformance={setPerformance} setAnsweredQuestions={setAnsweredQuestions} />
+            <CardAnswer answer={answer} setAnswered={setAnswered} setPerformance={setPerformance} setAnsweredQuestions={setAnsweredQuestions} answeredQuestions={answeredQuestions} />
         }
         {
             !closed && turned && answered &&
