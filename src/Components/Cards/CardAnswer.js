@@ -26,6 +26,4 @@ function CardAnswer ({answer, setPerformance, setAnswered, setAnsweredQuestions,
     )
 }
 
-
-
 export {CardAnswer};

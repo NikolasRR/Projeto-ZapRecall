@@ -10,4 +10,4 @@ function App () {
 }
 
 const page = document.querySelector(".root");
-reactDom.render(App(), page);
+reactDom.render(<App />, page);

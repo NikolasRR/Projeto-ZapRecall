@@ -7,6 +7,13 @@ body {
     justify-content: center;
 }
 
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .header1 {
     display: flex;
     flex-direction: column;
@@ -14,13 +21,13 @@ body {
 }
 
 .header1 h1 {
-    font-size: 25px;
-    line-height: 31px;
+    font-size: 36px;
+    line-height: 45px;
     letter-spacing: -0.012em;
     font-family: 'Righteous', cursive;
     color: #FFFFFF;
-    width: 152px;
-    height: 35px;
+    width: 257px;
+    height: 59px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,44 +35,46 @@ body {
 
 button {
     margin-top: 73px;
-    width: 141px;
-    height: 31px;
+    width: 246px;
+    height: 54px;
     background: #FFFFFF;
     border: 1px solid #D70900;
+    font-size: 18px;
+    line-height: 22px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     color: #D70900;
     font-family: 'Recursive', sans-serif;
 }
 
-.root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .header2 {
     position: fixed;
     top: 19px;
-    left: calc(50vw - 64px);
+    left: calc(50% - 150px);
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    background-color: #FB6B6B;
+    width: 300px;
+    z-index: 2px;
 }
 
 .header2 h1 {
-    width: 101.59px;
-    height: 22px;
+    width: 203px;
+    height: 44px;
     color: #FFFFFF;
     font-family: 'Righteous', cursive;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.012em;
 }
 
 .header2 img {
-    width: 26px; 
+    width: 52px; 
 }
 
 .root .cards {
+    margin-top:50px;
     max-height: 400px;
     overflow-y: auto;
 }
@@ -74,46 +83,45 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 182px;
-    height: 40px;
+    width: 300px;
+    height: 65px;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .root .question p {
     font-family: 'Recursive', sans-serif;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 19px;
     padding-left: 6px;
 }
 
 .root .question ion-icon {
-    font-size: 20px;
+    font-size: 25px;
     padding-right: 12px;
 }
 
 .root .questionsOpened {
     position: relative;
-    width: 182px;
-    min-height: 80px;
+    width: 300px;
+    min-height: 131px;
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   
 }
 
 .root .questionsOpened p {
-    padding: 13px 0 30px 6px;
+    padding: 13px 0 45px 6px;
     font-family: 'Recursive';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     color: #333333;
-    width: 173px;
+    max-width: 270px;
 }
 
 .root .questionsOpened img {
@@ -122,26 +130,22 @@ button {
     bottom: 7px;
 }
 
-.verse {
-    transform: rotateY(180deg);
-}
-
 .answers {
     position: absolute;
-    bottom: 3px;
-    left: 3px;
+    bottom: 6px;
+    left: 13px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 176px;
+    width: 281px;
 }
 
 .answers div {
-    width: 55px;
-    height: 24px;
+    width: 85px;
+    height: 37px;
     font-family: 'Recursive';
-    font-size: 7px;
-    line-height: 8px;
+    font-size: 12px;
+    line-height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +176,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 70px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -183,31 +187,34 @@ footer {
 
 footer p {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     font-family: 'Recursive', sans-serif;
     color: #333333;
     min-width: 97px;
-    height: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 8px;
 }
 
-.footer1 ion-icon {
-    font-size: 20px;
+footer ion-icon {
+    font-size: 25px;
 }
 
 footer.footerFinal {
-    height: 112px;
+    height: 171px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.15);
 }
 
 footer.footerFinal h6 {
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     font-family: 'Recursive', sans-serif;
     color: #333333;
-    padding-left: 4px;
+    padding: 0 0 5px 4px;
 }
 
 footer.footerFinal div:nth-child(1) {
@@ -229,7 +236,4 @@ footer.footerFinal div:nth-child(1) {
     color: #FF922E;
 }
 
-.hidden {
-    display: none;
-}
 
